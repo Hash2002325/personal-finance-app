@@ -1,0 +1,36 @@
+.category-selector {
+  margin: 20px 0;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.category-card {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card.selected {
+  border: 2px solid #000;
+}
+
+.category-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.category-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+} 

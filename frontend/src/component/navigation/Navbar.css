@@ -1,0 +1,107 @@
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #f0f2f5;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-auth a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar-auth a:hover {
+  background-color: #f8f9fa;
+}
+
+/* Dark theme support */
+[data-theme='dark'] .navbar {
+  background-color: #2d2d2d;
+}
+
+[data-theme='dark'] .navbar-brand a,
+[data-theme='dark'] .profile-link,
+[data-theme='dark'] .navbar-auth a {
+  color: #fff;
+}
+
+[data-theme='dark'] .navbar-auth a:hover {
+  background-color: #3d3d3d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .navbar-auth {
+    gap: 0.5rem;
+  }
+
+  .navbar-auth a {
+    padding: 0.5rem;
+  }
+} 

@@ -1,0 +1,25 @@
+.report-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chart-container {
+  height: 400px;
+  position: relative;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.report-container h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.report-container p {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+} 
